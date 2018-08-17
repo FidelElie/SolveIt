@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installation and Use
 1. Place the folder whether you like and either run the executable file or run the raw .ahk script for the script to run. 
-2. Type the hotsring "domath" to activate the input process.
+2. Type the hotsring "solveit" to activate the input process.
 3. Type your mathematics problem with spaces between each number and operation.
 4. When you are finished entering your desired problem leave a space and type "eq" (for equals).
 5. And your problem will be calculate and outputted back to your window/

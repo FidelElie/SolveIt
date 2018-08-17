@@ -1,7 +1,7 @@
 ; Perliminary
 DetectHiddenWindows, On  ; needed to control a hidden window
 ; ------------ Hotstring Used -----------
-::domath::
+::solveit::
 
 ;  ------------- Autohotkey Front End Initial ------------
 ; takes user problem, creates the file, puts problem in the file, creates nul file
