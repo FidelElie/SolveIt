@@ -43,7 +43,7 @@ class DoMath(object):
         """Method that uses idmas order for calculations"""
         i = 0
         while i < len(self.operators): # checks indices
-            if self.operators[i] == "**" or self.operators[i] == "^":
+            if self.operators[i].lower() == "**" or self.operators[i] == "^":
                calculation = self.det_calc(self.numbers[i], self.numbers[i + 1], "ind")
                self.remapper(i, calculation)
                i += 1
@@ -51,7 +51,7 @@ class DoMath(object):
                 break
         i = 0
         while i < len(self.operators): # checks division
-            if self.operators[i] == "/":
+            if self.operators[i].lower() == "/":
                calculation = self.det_calc(self.numbers[i], self.numbers[i + 1], "div")
                self.remapper(i, calculation)
                i += 1
@@ -59,7 +59,7 @@ class DoMath(object):
                 break
         i = 0
         while i < len(self.operators): # checks multiplication 
-            if self.operators[i] == "x" or self.operators[i]=="*":
+            if self.operators[i].lower() == "x" or self.operators[i]=="*":
                calculation = self.det_calc(self.numbers[i], self.numbers[i + 1], "mult")
                self.remapper(i, calculation)
                i += 1
@@ -67,7 +67,7 @@ class DoMath(object):
                 break
         i = 0
         while i < len(self.operators): # checks addition 
-            if self.operators[i] == "+":
+            if self.operators[i].lower() == "+":
                calculation = self.det_calc(self.numbers[i], self.numbers[i + 1], "add")
                self.remapper(i, calculation)
                i += 1
@@ -75,7 +75,7 @@ class DoMath(object):
                 break
         i = 0
         while i < len(self.operators): # checks subtraction 
-            if self.operators[i] == "-":
+            if self.operators[i].lower() == "-":
                calculation = self.det_calc(self.numbers[i], self.numbers[i + 1], "sub")
                self.remapper(i, calculation)
                i += 1
