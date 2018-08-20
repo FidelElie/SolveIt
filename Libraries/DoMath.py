@@ -27,7 +27,7 @@ class DoMath(object):
             if self.numbers[i].lower() == "e":
                 self.numbers[i] = math.e # converts e to its numerical value
             elif self.numbers[i].lower() == "pi":
-                self.numbers[i] == math.pi # converts pi to its numerical value
+                self.numbers[i] = math.pi # converts pi to its numerical value
             else:
                 None
 

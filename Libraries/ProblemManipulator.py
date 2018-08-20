@@ -35,6 +35,10 @@ class ProblemManipulator(object):
                 mod_number = "{}{}".format(self.problem[i + 1], self.problem[i + 2])
                 self.problem[i + 1] = mod_number
                 del self.problem[i + 2]
+            elif self.problem[i] == "^" and self.problem[i + 1] == "-": # checks if there is a indice next to the a subtract sign
+                mod_number = "{}{}".format(self.problem[i + 1], self.problem[i + 2])
+                self.problem[i + 1] = mod_number
+                del self.problem[i+2]
             else:
                 continue
                 
